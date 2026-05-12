@@ -3,7 +3,7 @@ schema_version: 1
 context:
   version: "3.2.0"
   build_base: 0
-  build: ${{ build_base + 100 if mpi == 'nompi' else build_base }}
+  build: 1
   mpi_prefix: ${{ 'nompi' if mpi == 'nompi' else 'mpi_' + mpi }}
 
 package:
