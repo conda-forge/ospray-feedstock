@@ -1,0 +1,22 @@
+c_stdlib:
+- vs
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- vs2022
+impi_devel:
+- 2021.16.0
+mpi:
+- impi
+mpich:
+- '4'
+openmpi:
+- '4'
+snappy:
+- '1.2'
+target_platform:
+- win-64
+tbb_devel:
+- '2022'
