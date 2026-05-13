@@ -11,7 +11,7 @@ impi_devel:
 mpi:
 - impi
 mpich:
-- '4'
+- '5'
 openmpi:
 - '4'
 snappy:
