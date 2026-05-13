@@ -21,7 +21,7 @@ mpi:
 mpich:
 - '5'
 openmpi:
-- '4'
+- '5'
 snappy:
 - '1.2'
 target_platform:
