@@ -23,16 +23,16 @@ requirements:
     - ${{ compiler("cxx") }}
     - ${{ stdlib("c") }}
     - cmake
-    - ispc
+    - ispc >=1.23
     - ninja
   host:
     - ${{ mpi if mpi != "nompi" and mpi != "impi" }}
     - ${{ "impi-devel" if mpi == "impi" }}
     - ${{ "snappy" if mpi != "nompi" }}
-    - embree
-    - openimagedenoise
-    - openvkl
-    - rkcommon ==1.14.0
+    - embree >=4.3.3,<5
+    - openimagedenoise >=2.3,<3
+    - openvkl >=2.0.2,<3
+    - rkcommon ==1.15.4
     - tbb-devel
   run_exports:
     - ${{ pin_subpackage("ospray", upper_bound="x.x") }}
