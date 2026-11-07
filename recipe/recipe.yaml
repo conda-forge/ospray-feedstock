@@ -31,8 +31,8 @@ requirements:
     - ${{ "snappy" if mpi != "nompi" }}
     - embree >=4.3.3,<5
     - openimagedenoise >=2.3,<3
-    - openvkl >=2.0.2,<3
-    - rkcommon ==1.15.4
+    - openvkl >=2.0.1,<3
+    - rkcommon ==1.14.0
     - tbb-devel
   run_exports:
     - ${{ pin_subpackage("ospray", upper_bound="x.x") }}
